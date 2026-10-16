@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whatsigned"
+version = "0.1.0"
+description = "Watch the TLS certificates hosts actually serve: replacements, issuer/SAN changes, expiry. Local history, stdlib-only, no services."
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+whatsigned = "whatsigned:main"
+
+[tool.setuptools]
+py-modules = ["whatsigned"]
